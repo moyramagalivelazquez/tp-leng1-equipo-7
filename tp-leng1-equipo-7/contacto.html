@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red de Rescate Huellas Solidarias - contactos</title>
+</head>
+<body>
+    <header>
+        <img src="./IMG/logo_ONG.png" alt="Logo ONG" width="300">
+        <h1>Red de Rescate Huellas Solidarias</h1>
+        <h2>fundacion de ayuda a los animales</h2>
+        <nav>
+            <lu>
+                <li><a href="./index.html">index</a></li>
+                <li><a href="./contacto.html">contactos</a></li>
+                <li><a href="./nosotros.html">nosotros</a></li>
+                <li><a href="./programas.html">programas</a></li>
+            </lu>
+        </nav>
+    
+    </header>
+    <main>
+        <h2>Sumate como voluntario</h2>
+        <p>complete el formulario o escribinos a <a href="mailto:info@RedDeRescateHuellasSolidarias.org.ar">info@RedDeRescateHuellasSolidarias.org.ar</a></p>
+        <form action="#" method="post">
+            <label for="nombre">nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre" placeholder="ej: el negro jose" required>
+            <br>
+            <label for="email">gmail</label>
+            <input type="email" name="email" id="email" placeholder="tucorreo@email.com" required>
+            <br>
+            <label for="telefono">telefono</label>
+            <input type="tel" name="telefono" id="email" placeholder="+54 11 1234-5678">
+            <br>
+            <label for="programa">programas de interes</label>
+            <select name="programa" id="programa" required>
+                <option value="">elegir programa...</option>
+                <option value="pldc">Un nuevo hogar</option>
+                <option value="met">Rescate y recuperacion</option>
+                <option value="ec">Por un mundo mejor</option>
+            </select>
+            <label for="disponibilidad">disponibilidad</label>
+            <select name="disponibilidad" id="disponibilidad" required>
+                <option value="mañana">mañana</option>
+                <option value="tarde">tarde</option>
+                <option value="noche">noche</option>
+            </select>
+            <br>
+            <label for="mensaje">por que queres sumarte?</label>
+            <textarea name="mensaje" id="mensaje" placeholder="contanos un poco..."></textarea>
+            <br>
+            <button type="submit">enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>><small>Red de Rescate Huellas Solidarias &copy; 2026</small></p>
+    </footer>
+</body>
+</html>
