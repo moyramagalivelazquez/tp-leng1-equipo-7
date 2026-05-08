@@ -1,0 +1,88 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/*ESTILOS GLOBALES*/
+html{font-size: 18px;}
+body{
+    font-family: var(--fuente-principal, Arial, sans-serif);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-texto, #333);
+    background-color: var(--color-fondo, #f4f4f4);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*TIPOGRAFIA*/
+h1, h2{font-size: 2rem; color:antiquewhite;}
+h3{font-size: 1.5rem; color:antiquewhite;}
+p{margin-bottom: 1rem;}
+
+/*HEADER*/
+header{
+    background-color: var(--color-header, #4CAF50);
+    color: var(--color-header-texto, white);
+    padding: 20px;
+    text-align: center;
+}
+/*MENU DE NAVEGACION*/
+nav{
+    margin-top: 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a{
+    color: var(--color-nav-enlace, white);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    color: var(--color-nav-hover, #ddd);
+    text-decoration: underline;
+}
+/*MAIN Y SECCIONES*/
+main{
+    padding: 2rem;
+}
+
+section{
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-seccion-borde, #ccc);
+}
+
+/*FIGURES- (seccion de imagenes)*/
+figure{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+/*APLICAR A LAS IMAGENES DE LA GALERIA*/
+figure img{
+    width: auto;
+    height: auto;
+    object-fit: cover;/*recorta manteniendo la proporcion*/
+    border-radius: 5px;/*bordes redondeados*/
+}
+
+figcaption{
+    grid-column: 1 / -1; /*ocupa toda la fila*/
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+/*FOOTER*/
+footer{
+    background-color: var(--color-footer, #333);
+    color: var(--color-footer-texto, white);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
