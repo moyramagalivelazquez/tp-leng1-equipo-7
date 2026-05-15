@@ -59,17 +59,23 @@ section{
     border-bottom: 1px solid var(--color-seccion-borde, #ccc);
 }
 
+.seccion-bienvenida{
+    text-align: center;
+    padding: 40px 20px;
+}
+
 /*FIGURES- (seccion de imagenes)*/
-figure{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    justify-items: center;
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 /*APLICAR A LAS IMAGENES DE LA GALERIA*/
-figure img{
+.galeria img{
     width: 300px;
     height: auto;
+    gap: 20px;
     object-fit: cover;/*recorta manteniendo la proporcion*/
     border-radius: 10px;/*bordes redondeados*/
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -79,10 +85,10 @@ figure img:hover{
     transform: scale(1.05);
 }
 figcaption{
-    grid-column: 1 / -1; /*ocupa toda la fila*/
+    
     text-align: center;
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 section img{
     width: 100%;
@@ -146,4 +152,11 @@ button{
 
 button:hover{
     background-color: #a65349;
+}
+
+.contenido{
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-seccion-borde, #ccc);
 }
