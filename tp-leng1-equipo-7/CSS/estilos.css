@@ -1,10 +1,9 @@
 *{box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 :root{
-    --fuente-principal: Arial;
+    --fuente-principal: 'Poppins';
     --color-texto: #000000;
     --color-fondo: antiquewhite;
     --color-header: #1a2b1a;
@@ -31,8 +30,9 @@ p{margin-bottom: 1rem;}
 /*HEADER*/
 header{
     background-color: var(--color-header);
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 /*MENU DE NAVEGACION*/
 nav{
@@ -46,17 +46,20 @@ nav ul{
 }
 nav a{
     color: var(--color-nav-enlace);
-    margin: 10px;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 nav a:hover{
-    color: var(#ddd);
-    text-decoration: underline;
+    background-color: white;
+    color: #4CAF50;
 }
 /*MAIN Y SECCIONES*/
 main{
+    max-width: 1100px;
+    margin: auto;
     padding: 2rem;
 }
 
@@ -129,8 +132,8 @@ th{
     color: white;
 }
 
-tr:nth-child(even){
-    background-color: #f5f5f5;
+tfoot{
+    background-color: wheat;
 }
 form{
     display: flex;
