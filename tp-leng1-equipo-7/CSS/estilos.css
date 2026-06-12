@@ -8,9 +8,11 @@
     --color-fondo: antiquewhite;
     --color-header: #1a2b1a;
     --color-nav-enlace: white;
+    --mark: #1a2b1a;
 }
 
 /*ESTILOS GLOBALES*/
+
 html{font-size: 18px;}
 body{
     font-family: var(--fuente-principal, sans-serif);
@@ -26,7 +28,10 @@ body{
 h1, h2{font-size: 2rem; color:rgb(199, 105, 92);}
 h3{font-size: 1.5rem; color:rgb(199, 105, 92);}
 p{margin-bottom: 1rem;}
-
+mark {
+    background-color: var(--mark);
+    color: white;
+}
 /*HEADER*/
 header{
     background-color: var(--color-header);
