@@ -1,136 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Rodolfo al rescate</title>
+    <meta name="description" content="Red Rodolfo al Rescate es una ONG dedicada al rescate, recuperación y adopción responsable de animales.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Red Rodolfo al Rescate | ONG de Protección Animal</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
+
 <body>
-    <header>
-        <img src="./IMG/LOGO_ONG.PNG" alt="Logo ONG" width="300">
+    <header class="container text-center my-4">
+        <img src="./IMG/LOGO_ONG.png" alt="Logo de la ONG" width="300">
         <h1>Red de Rodolfo al Rescate</h1>
         <h2>Fundación de ayuda a los animales</h2>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./programas.html">Programas</a></li>
-                <li><a href="./SuperBuild.html">Arquetipo</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="#redes">Redes</a></li>
-                <li><a href="#impacto">Numeros</a></li>
+
+        <nav aria-label="Navegación principal">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="./index.html">Inicio</a></li>
+                <li class="list-inline-item"><a href="./contacto.html">Contacto</a></li>
+                <li class="list-inline-item"><a href="./nosotros.html">Nosotros</a></li>
+                <li class="list-inline-item"><a href="./programas.html">Programas</a></li>
+                <li class="list-inline-item"><a href="./SuperBuild.html">Arquetipo</a></li>
+                <li class="list-inline-item"><a href="#impacto">Números</a></li>
+                <li class="list-inline-item"><a href="#redes">Redes</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main>
 
-        <section class="seccion-bienvenida">
-            <h2>Bienvenidos a nuestra ONG, si tú eres un amante de los animales este es el lugar correcto</h2>
-            <figure class="galeria">
-                <img src="./IMG/adopcion.jpg" alt="Banner de Bienvenida">
-                <img src="./IMG/rescate.jpg" alt="Banner de Bienvenida">
-                <img src="./IMG/medicina.jpg" alt="Banner de Bienvenida">
-                <br>
+    <main class="container">
+        <section class="seccion-bienvenida my-5">
+            <h2>Bienvenidos a nuestra ONG. Si eres amante de los animales, este es el lugar indicado.</h2>
+
+            <figure class="galeria mt-4">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <img src="./IMG/adopcion.jpg" alt="Adopción de mascotas" class="img-fluid rounded" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./IMG/rescate.jpg" alt="Rescate de un perro callejero" class="img-fluid rounded" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./IMG/medicina.jpg" alt="Veterinario ayudando a perros discapacitados" class="img-fluid rounded" loading="lazy">
+                    </div>
+                </div>
+                <figcaption class="mt-3 text-center">Algunos de nuestros rescates y actividades solidarias</figcaption>
             </figure>
-            <figcaption>
-                    Algunos de nuestros rescates y actividades solidarias
-            </figcaption>
         </section>
-        
-        <section>
+
+        <section class="my-5">
             <h2>¿Quiénes somos?</h2>
-            <p><strong>Rodolfo al Rescate</strong> es una organización sin fines de lucro dedicada al rescate, cuidado y protección de animales en 
-            situación de abandono, maltrato o riesgo. Nuestro compromiso nace del amor por los animales y del deseo de brindarles 
-            una segunda oportunidad para vivir con dignidad y seguridad.
-            </p>
-            <p>
-            En nuestra ONG trabajamos día a día rescatando animales que se encuentran en la calle o en condiciones vulnerables.
-            Una vez rescatados, les brindamos atención veterinaria, alimentación adecuada y un espacio seguro donde puedan recuperarse física
-            y emocionalmente. También fomentamos la adopción responsable, buscando familias comprometidas que les ofrezcan un hogar definitivo
-            lleno de cariño y cuidado.
-            </p>
-            <p> 
-            Además, desarrollamos campañas de concientización dirigidas a la comunidad, promoviendo el respeto hacia los animales, 
-            la tenencia responsable y la importancia de la esterilización para evitar la sobrepoblación animal.
-            Nuestro equipo está formado por voluntarios comprometidos que trabajan con dedicación y empatía, convencidos de que cada vida importa
-            y que, con pequeñas acciones, es posible generar grandes cambios en la vida de los animales.
-            </p>
+            <p><strong>Rodolfo al Rescate</strong> es una organización sin fines de lucro dedicada al rescate, cuidado y protección de animales en situación de abandono, maltrato o riesgo. Nuestro compromiso nace del amor por los animales y del deseo de brindarles una segunda oportunidad para vivir con dignidad y seguridad.</p>
+            <p>En nuestra ONG trabajamos día a día rescatando animales que se encuentran en la calle o en condiciones vulnerables. Una vez rescatados, les brindamos atención veterinaria, alimentación adecuada y un espacio seguro donde puedan recuperarse física y emocionalmente. También fomentamos la adopción responsable, buscando familias comprometidas que les ofrezcan un hogar definitivo lleno de cariño y cuidado.</p>
+            <p>Además, desarrollamos campañas de concientización dirigidas a la comunidad, promoviendo el respeto hacia los animales, la tenencia responsable y la importancia de la esterilización para evitar la sobrepoblación animal. Nuestro equipo está formado por voluntarios comprometidos que trabajan con dedicación y empatía, convencidos de que cada vida importa y que, con pequeñas acciones, es posible generar grandes cambios en la vida de los animales.</p>
         </section>
 
-        
+        <section class="my-5">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body p-4">
+                    <h2 class="mb-3 text-center">Nuestra misión</h2>
+                    <p class="text-center mb-4">
+                        Proteger, rescatar and brindar una segunda oportunidad a los animales en situación de abandono o maltrato, promoviendo una cultura de respeto, empatía y adopción responsable.
+                    </p>
 
-        <section id="impacto">
-            <h2>Nuestro impacto en números</h2>
-            <table>
-                <thead>
-                    <tr><th>Programas</th>
-                        <th>Voluntarios</th>
-                        <th>Animales intervenidos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Un nuevo hogar</td>
-                        <td>100</td>
-                        <td>+500</td>
-                    </tr>
-                    <tr>
-                        <td>Rescate y recuperación</td>
-                        <td>250</td>
-                        <td>+1200</td>
-                    </tr>
-                    <tr>
-                        <td>Por un mundo mejor</td>
-                        <td>200</td>
-                        <td>+800</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>total</td>
-                        <td>550</td>
-                        <td>+2500</td>
-                    </tr>
-                </tfoot>
-            </table>
-            <br>
-            <p>Más de 2500 animales han sido rescatados y muchos más esperan por tu ayuda!</p>
-            <a href="./contacto.html">Que esperas para unirte a nosotros?</a>
+                    <hr class="my-4">
+
+                    <h2 class="mb-4 text-center">¿Cómo puedes ayudar?</h2>
+                    <div class="list-group list-ayuda">
+                        <div class="list-group-item d-flex align-items-center gap-2">🐾 Adoptando responsablemente.</div>
+                        <div class="list-group-item d-flex align-items-center gap-2">💰 Realizando donaciones.</div>
+                        <div class="list-group-item d-flex align-items-center gap-2">🤝 Participando como voluntario.</div>
+                        <div class="list-group-item d-flex align-items-center gap-2">📣 Difundiendo nuestras campañas.</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section id="impacto" class="my-5">
+            <h2 class="text-center mb-4">Nuestro impacto en números</h2>
+
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0 rounded-4 p-4 h-100">
+                        <h3 class="mb-2">🐶 Un nuevo hogar</h3>
+                        <p class="display-6 fw-bold text-success">+500</p>
+                        <p class="text-muted">animales adoptados</p>
+                        <small>100 voluntarios</small>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0 rounded-4 p-4 h-100">
+                        <h3 class="mb-2">❤️ Rescate y recuperación</h3>
+                        <p class="display-6 fw-bold text-success">+1200</p>
+                        <p class="text-muted">animales asistidos</p>
+                        <small>250 voluntarios</small>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0 rounded-4 p-4 h-100">
+                        <h3 class="mb-2">🌍 Por un mundo mejor</h3>
+                        <p class="display-6 fw-bold text-success">+800</p>
+                        <p class="text-muted">animales protegidos</p>
+                        <small>200 voluntarios</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <div class="card shadow border-0 rounded-4 p-4 mx-auto" style="max-width: 500px;">
+                    <h3>📊 Total de impacto</h3>
+                    <p class="display-5 fw-bold text-success">+2500</p>
+                    <p class="text-muted">animales rescatados en total</p>
+                </div>
+            </div>
+
+            <p class="text-center mt-4">
+                ¡Más de 2500 animales han sido rescatados y muchos más esperan por tu ayuda!
+            </p>
+
+            <div class="text-center">
+                <a href="./contacto.html" class="btn btn-success btn-lg">¿Qué esperas para unirte?</a>
+            </div>
+        </section>
+
+        <section class="my-5 text-center">
             <h2>Seguinos en nuestras redes sociales</h2>
-            <p>En nuestras redes sociales compartimos historias de nuestros amigos rescatados, consejos para el cuidado de los animales, información sobre nuestros programas, 
-                campañas y formas de involucrarse como voluntario o donante.
-                ¡Síguenos para estar al tanto de todas nuestras actividades y ser parte de esta gran comunidad que trabaja por el bienestar animal!</p>
+
+            <p>En nuestras redes sociales compartimos historias de nuestros amigos rescatados, consejos para el cuidado de los animales, información sobre nuestros programas, campañas y formas de involucrarse como voluntario o donante.
+            </p>
+
+        <!-- Flecha hacia abajo -->
+            <div class="flecha-footer">
+                    ↓
+            </div>
+
+            <p class="text-muted">
+                    ¡Deslizá hacia el final para ver nuestras redes!
+            </p>
         </section>
     </main>
 
-    <footer>
-        <div id="redes" class="redes-sociales">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="./IMG/facebook.png" alt="Facebook">
+    <footer class="text-center py-3">
+        <div id="redes" class="redes-sociales mb-3">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="./IMG/facebook.png" alt="Facebook" loading="lazy">
             </a>
-
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="./IMG/instagram.png" alt="Instagram">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="./IMG/instagram.png" alt="Instagram" loading="lazy">
             </a>
-
-            <a href="https://www.x.com" target="_blank">
-                <img src="./IMG/x.png" alt="Twitter">
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
+                <img src="./IMG/x.png" alt="Twitter" loading="lazy">
             </a>
         </div>
-        <p><small>Red de Rodolfo al Rescate &copy; 2026</small></p>
+        <p>
+            <small>Red de Rodolfo al Rescate © 2026 - Todos los derechos reservados.</small>
+        </p>
     </footer>
-</body>
-</html>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
