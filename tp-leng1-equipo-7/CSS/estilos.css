@@ -118,6 +118,10 @@ nav a:hover {
     background-color: white;
     color: #4CAF50;
 }
+nav a.active{
+    background-color: white;
+    color: #1a2b1a;
+}
 
 @media (max-width: 768px) {
     nav ul {
@@ -220,7 +224,20 @@ figcaption {
 #impacto .btn {
     margin-top: 1rem;
 }
+.card{
+    transition: transform .3s ease, box-shadow .3s ease;
+}
 
+.card:hover{
+    transform: translateY(-8px);
+}
+.display-5,
+.display-6{
+    transition: color .3s ease;
+}
+.lista-verde .list-group-item {
+    background-color: #f8fff8;
+}
 /* ==========================================================================
    FORMULARIOS
    ========================================================================== */

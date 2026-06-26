@@ -1,108 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Red de Rodolfo al Rescate - contacto</title>
+        <title>Red de Rodolfo al Rescate - contacto</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/estilos.css">
-</head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/estilos.css">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img src="./IMG/LOGO_ONG.png" alt="Logo ONG" width="300">
-        <h1>Red de Rodolfo al Rescate</h1>
-        <h2>Fundación de ayuda a los animales</h2>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./programas.html">Programas</a></li>
-                <li><a href="#redes">Redes</a></li>
-            </ul>
-        </nav>    
-    </header>
+        <header>
+            <img src="./IMG/LOGO_ONG.png" alt="Logo ONG" width="300">
+            <h1>Red de Rodolfo al Rescate</h1>
+            <h2>Fundación de ayuda a los animales</h2>
 
-    <main class="container my-5">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./contacto.html" class="active">Contacto</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./programas.html">Programas</a></li>
+                    <li><a href="#redes">Redes</a></li>
+                </ul>
+            </nav>    
+        </header>
 
-        <div class="card shadow-lg border-0 rounded-4">
+        <main class="container my-5">
 
-            <div class="card-body p-4">
+            <div class="card shadow-lg border-0 rounded-4">
 
-                    <h2 class="text-center mb-4">🐾 Sumate como voluntario</h2>
+                <div class="card-body p-4">
+
+                     <h2 class="text-center mb-4">🐾 Sumate como voluntario</h2>
 
                         <p class="text-center mb-5">Cada voluntario hace la diferencia. Si compartís nuestro amor por los animales, completá el formulario y nos pondremos en contacto con vos.</p>
 
-                    <div class="row g-5">
+                        <div class="row g-5">
 
-                        <!-- FORMULARIO -->
-                        <div class="col-lg-7">
+                            <div class="col-lg-7">
 
-                            <form action="#" method="post">
+                                <form action="#" method="post">
 
-                                <label for="nombre">👤 Nombre y apellido</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Ej: María García" required>
+                                    <label for="nombre">👤 Nombre y apellido</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Ej: María García" autocomplete="name" required>
 
-                                <label for="email" class="mt-3">📧 Correo electrónico</label>
-                                <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required>
+                                    <label for="email" class="mt-3">📧 Correo electrónico</label>
+                                    <input type="email" id="email" name="email" placeholder="tucorreo@email.com" autocomplete="email" required>
 
-                                <label for="telefono" class="mt-3">📱 Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono"placeholder="+54 11 1234-5678">
+                                    <label for="telefono" class="mt-3">📱 Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono"placeholder="+54 11 1234-5678" autocomplete="tel" required>
 
-                                <label for="programa" class="mt-3">🐶 Programa de interés</label>
-                                    <select id="programa" name="programa" required>
-                                        <option value="">Elegir programa...</option>
-                                        <option>Un nuevo hogar</option>
-                                        <option>Rescate y recuperación</option>
-                                        <option>Por un mundo mejor</option>
-                                    </select>
+                                    <label for="programa" class="mt-3">🐶 Programa de interés</label>
+                                        <select id="programa" name="programa" required>
+                                            <option value="">Elegir programa...</option>
+                                            <option>Un nuevo hogar</option>
+                                            <option>Rescate y recuperación</option>
+                                            <option>Por un mundo mejor</option>
+                                        </select>
 
-                                <label for="disponibilidad" class="mt-3">🕒 Disponibilidad</label>
-                                    <select id="disponibilidad" name="disponibilidad" required>
-                                        <option value="">Elegí un horario...</option>
-                                        <option>Mañana</option>
-                                        <option>Tarde</option>
-                                        <option>Noche</option>
-                                    </select>
+                                    <label for="disponibilidad" class="mt-3">🕒 Disponibilidad</label>
+                                        <select id="disponibilidad" name="disponibilidad" required>
+                                            <option value="">Elegí un horario...</option>
+                                            <option>Mañana</option>
+                                            <option>Tarde</option>
+                                            <option>Noche</option>
+                                        </select>
 
-                                <label for="mensaje" class="mt-3">💬 ¿Por qué quieres sumarte?</label>
+                                    <label for="mensaje" class="mt-3">💬 ¿Por qué querés sumarte?</label>
 
-                                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos un poco sobre vos..."></textarea>
+                                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos un poco sobre vos..."></textarea>
 
-                                    <button type="submit" class="btn btn-success btn-lg mt-4 w-100">📨 Enviar solicitud</button>
+                                        <button type="submit" class="btn btn-success btn-lg mt-4 w-100">📨 Enviar solicitud</button>
+                                        <p class="text-center text-muted mt-3">Nos comunicaremos con vos dentro de las próximas 48 horas.</p>
 
-                            </form>
+                                </form>
 
-                        </div>
+                            </div>
 
-                        <!-- INFORMACIÓN -->
-                        <div class="col-lg-5">
+                            <div class="col-lg-5">
 
-                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card h-100 shadow-sm border-0">
 
-                                <div class="card-body">
+                                    <div class="card-body">
 
-                                    <h3 class="text-center mb-4">📍 Información de contacto</h3>
+                                        <h3 class="text-center mb-4">📍 Información de contacto</h3>
 
-                                    <p><strong>📧 Email</strong><br><a href="mailto:info@RedDeRodolfoAlRescate.org.ar">info@RedDeRodolfoAlRescate.org.ar</a></p>
+                                        <hr>
 
-                                    <p><strong>📞 Teléfono</strong><br><a href="tel:+541112345678">+54 11 1234-5678</a></p>
+                                        <p><strong>📧 Email</strong><br><a href="mailto:info@RedDeRodolfoAlRescate.org.ar">info@RedDeRodolfoAlRescate.org.ar</a></p>
 
-                                    <p><strong>📍 Dirección</strong><br>Buenos Aires, Argentina</p>
+                                        <p><strong>📞 Teléfono</strong><br><a href="tel:+541112345678">+54 11 1234-5678</a></p>
 
-                                    <p><strong>🕒 Horario de atención</strong><br>Lunes a Viernes<br>09:00 a 18:00 hs</p>
+                                        <p><strong>📍 Dirección</strong><br>Buenos Aires, Argentina</p>
 
-                                    <hr>
+                                        <p><strong>🕒 Horario de atención</strong><br>Lunes a Viernes de 09:00 a 18:00 hs</p>
 
-                                    <h5 class="text-center">❤️ También podés colaborar mediante donaciones o difundiendo nuestras campañas.</h5>
+                                        <hr>
+
+                                        <h5 class="text-center">❓ Preguntas frecuentes</h5>
+
+                                        <p><strong>¿Tiene costo ser voluntario?</strong><br>No, solo necesitamos tu compromiso y ganas de ayudar.</p>
+                                        <p><strong>¿Debo tener experiencia?</strong><br>No es necesario, nosotros te acompañamos.</p>
+                                        <hr>
+
+                                        <h5 class="text-center">🐾 ¿Qué hace un voluntario?</h5>
+
+                                            <ul class="mt-3">
+                                                <li>Ayuda en jornadas de adopción.</li>
+                                                <li>Colabora con el cuidado de los animales.</li>
+                                                <li>Difunde campañas solidarias.</li>
+                                                <li>Participa en rescates cuando es posible.</li>
+                                            </ul>
+
+                                        <hr>
+                                        <h5 class="text-center mt-3">❤️ También podés colaborar mediante donaciones o difundiendo nuestras campañas.</h5>
+                                        <hr>
+                                        <h5 class="text-center">❤️ Muchas Gracias</h5>
+                                    </div>
 
                                 </div>
 
@@ -110,52 +131,47 @@
 
                         </div>
 
-                    </div>
+                </div>
 
             </div>
 
-        </div>
+            <section class="my-5 text-center">
+                <h2>Seguinos en nuestras redes sociales</h2>
 
-        <section class="my-5 text-center">
-            <h2>Seguinos en nuestras redes sociales</h2>
+                <p>En nuestras redes sociales compartimos historias de nuestros amigos rescatados, consejos para el cuidado de los animales, información sobre nuestros programas, campañas y formas de involucrarse como voluntario o donante.</p>
 
-            <p>En nuestras redes sociales compartimos historias de nuestros amigos rescatados, consejos para el cuidado de los animales, información sobre nuestros programas, campañas y formas de involucrarse como voluntario o donante.
-            </p>
-
-        <!-- Flecha hacia abajo -->
-            <div class="flecha-footer">
+        
+                <div class="flecha-footer">
                     ↓
+                </div>
+
+                <p class="text-muted">¡Deslizá hacia el final para ver nuestras redes!</p>
+            </section>
+
+        </main>
+
+        <footer class="text-center py-3">
+
+            <div id="redes" class="redes-sociales mb-3">
+
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="./IMG/facebook.png" alt="Facebook"></a>
+
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="./IMG/instagram.png" alt="Instagram"></a>
+
+                <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
+                <img src="./IMG/x.png" alt="Twitter"></a>
+
             </div>
-
-            <p class="text-muted">
-                    ¡Deslizá hacia el final para ver nuestras redes!
-            </p>
-        </section>
-
-    </main>
-
-    <footer class="text-center py-3">
-
-        <div id="redes" class="redes-sociales mb-3">
-
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src="./IMG/facebook.png" alt="Facebook"></a>
-
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="./IMG/instagram.png" alt="Instagram"></a>
-
-            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
-            <img src="./IMG/x.png" alt="Twitter"></a>
-
-        </div>
 
             <p><small>Red de Rodolfo al Rescate © 2026 - Todos los derechos reservados.</small></p>
 
-    </footer>
+        </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./JS/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./JS/script.js"></script>
 
-</body>
+    </body>
 
 </html>
