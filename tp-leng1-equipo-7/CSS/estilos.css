@@ -28,7 +28,7 @@ body {
     background-color: var(--color-fondo);
     max-width: 2500px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 0 auto;
 }
 
 /* ==========================================================================
@@ -61,10 +61,9 @@ mark {
    ESTRUCTURA PRINCIPAL (HEADER, MAIN, SECTIONS)
    ========================================================================== */
 header {
-    background-color: var(--color-header);
+    background-color: #1a2b1a;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -75,7 +74,7 @@ main {
 
 section {
     margin-bottom: 2rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--color-seccion-borde, #ccc);
 }
@@ -181,6 +180,10 @@ figcaption {
 
 .table-hover tbody tr:hover > * {
     background-color: #f1d2c8 !important;
+}
+.numero-impacto{
+    color:#c7695c;
+    font-weight:bold;
 }
 
 /* Listas de Ayuda */
