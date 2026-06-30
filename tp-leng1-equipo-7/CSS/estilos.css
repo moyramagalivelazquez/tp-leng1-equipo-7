@@ -236,7 +236,93 @@ figcaption {
     transition: color .3s ease;
 }
 .lista-verde .list-group-item {
-    background-color: #f8fff8;
+    background-color: #91e891;
+}
+.list-group-item{
+    opacity:0;
+    transform:translateX(-40px);
+    animation:aparecer .6s forwards;
+}
+
+.list-group-item:nth-child(1){animation-delay:.1s;}
+.list-group-item:nth-child(2){animation-delay:.2s;}
+.list-group-item:nth-child(3){animation-delay:.3s;}
+.list-group-item:nth-child(4){animation-delay:.4s;}
+.list-group-item:nth-child(5){animation-delay:.5s;}
+.list-group-item:nth-child(6){animation-delay:.6s;}
+.list-group-item:nth-child(7){animation-delay:.7s;}
+.list-group-item:nth-child(8){animation-delay:.8s;}
+.list-group-item:nth-child(9){animation-delay:.9s;}
+
+@keyframes aparecer{
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+.instagram-card{
+    background: linear-gradient(135deg,#d9f8d9,#ffffff);
+    transition: .3s;
+}
+
+.instagram-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+.card-verde{
+    background: #f8fff7;
+    border: 2px solid #9bcf8c !important;
+    transition: .35s;
+    box-shadow: 0 0 25px rgba(76,175,80,.18);
+}
+
+.card-verde:hover{
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 35px rgba(76,175,80,.35),
+        0 0 60px rgba(76,175,80,.18);
+}
+#carouselRescates{
+    padding:40px;
+    border-radius:25px;
+    background:linear-gradient(135deg,#f8fff8,#edf9ed);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    filter:
+        invert(58%)
+        sepia(27%)
+        saturate(760%)
+        hue-rotate(63deg);
+}
+.valor-card{
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    height: 100%;
+    box-shadow: 0 10px 25px rgba(44, 109, 73, 0.15);
+    transition: .3s ease;
+}
+
+.valor-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(44, 109, 73, 0.30);
+}
+
+.valor-icono{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.valor-card h5{
+    color: #2c6d49;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.valor-card p{
+    color: #555;
+    margin: 0;
 }
 /* ==========================================================================
    FORMULARIOS
