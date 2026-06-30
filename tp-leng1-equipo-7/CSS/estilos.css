@@ -239,11 +239,16 @@ figcaption {
     background-color: #91e891;
 }
 .list-group-item{
-    opacity:0;
-    transform:translateX(-40px);
-    animation:aparecer .6s forwards;
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 2s ease, transform 2s ease;
 }
-
+    /*animation:aparecer .6s forwards;*/
+.list-group-item.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+/*
 .list-group-item:nth-child(1){animation-delay:.1s;}
 .list-group-item:nth-child(2){animation-delay:.2s;}
 .list-group-item:nth-child(3){animation-delay:.3s;}
@@ -253,13 +258,14 @@ figcaption {
 .list-group-item:nth-child(7){animation-delay:.7s;}
 .list-group-item:nth-child(8){animation-delay:.8s;}
 .list-group-item:nth-child(9){animation-delay:.9s;}
-
-@keyframes aparecer{
+*/
+/*@keyframes aparecer{
     to{
         opacity:1;
         transform:translateX(0);
     }
 }
+*/
 .instagram-card{
     background: linear-gradient(135deg,#d9f8d9,#ffffff);
     transition: .3s;
